@@ -1,2 +1,3 @@
 # tkinter is built-in, but no harm listing it
 pyinstaller
+py2app

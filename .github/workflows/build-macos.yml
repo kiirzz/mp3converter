@@ -30,6 +30,13 @@ jobs:
       - name: Build .app using py2app
         run: python setup.py py2app
 
+      - name: Make ffmpeg executable
+        run: chmod +x ffmpeg/ffmpeg
+
+      - name: Check file .app
+        run: |
+          ls dist
+
       - name: Upload built .app
         uses: actions/upload-pages-artifact@v3
         with:
