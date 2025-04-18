@@ -38,7 +38,7 @@ jobs:
           ls dist
 
       - name: Upload built .app
-        uses: actions/upload-pages-artifact@v3
+        uses: actions/upload-artifact@v3
         with:
           name: MyMacApp
           path: dist/*.app
