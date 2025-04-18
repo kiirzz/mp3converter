@@ -33,12 +33,8 @@ jobs:
       - name: Make ffmpeg executable
         run: chmod +x ffmpeg/ffmpeg
 
-      - name: Check file .app
-        run: |
-          ls dist
-
       - name: Upload built .app
         uses: actions/upload-artifact@v4
         with:
-          name: MyMacApp
+          name: MP3Converter
           path: dist/*.app
